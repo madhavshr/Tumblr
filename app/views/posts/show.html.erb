@@ -1,2 +1,12 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1 class="title">
+<%= @post.title %>
+</h1>
+
+<p class="date">
+<h3>Submitted <%= time_ago_in_words(@post.created_at) %> ago</h3>
+	
+</p>
+
+<p class="body">
+	<%= @post.body %>
+</p>
