@@ -6,7 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="container">
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+		<%= link_to "Tumblr", root_path, class:"navbar-brand" %>
+	</div>
+	<ul class="nav navbar-nav">
+	   <li><%= link_to "Make Post", new_post_path %></li>
+	</ul>
+
+</nav>
 
 <%= yield %>
 
